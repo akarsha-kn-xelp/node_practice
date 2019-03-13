@@ -42,3 +42,36 @@ var port = 1235;
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
+
+//Sample  URLs With Parameters
+// //create
+// POST Call
+// localhost:1235/products/create
+// params
+// name:'apple',
+// price:100
+
+// //read
+// GET Call
+// localhost:1235/products/1 
+// localhost:1235/products/2
+// localhost:1235/products/product_id
+
+// //update
+// POST Call
+// localhost:1235/products/2/update
+// params
+// name:'orange'
+
+// localhost:1235/products/3/update
+// params
+// name:'banana'
+// price:10
+
+// localhost:1235/products/product_id/update
+
+// //delete
+// DELETE Call
+// localhost:1235/products/1/delete
+// localhost:1235/products/2/delete
+// localhost:1235/products/product_id/delete
